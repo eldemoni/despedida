@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/abc",
+    "/autobus",
+    "/caracoles",
+    "/dado",
+    "/frases",
+    "/makelele",
+    "/menu",
+    "/ruleta"
+  ]
+}
