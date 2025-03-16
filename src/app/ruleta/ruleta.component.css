@@ -1,0 +1,73 @@
+.ruleta-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    color: white;
+}
+
+.ruleta {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #333;
+    overflow: hidden;
+    transition: transform 4s ease-out;
+}
+
+.option {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0;
+    left: 50%;
+    transform-origin: 0% 100%; /* Cambiado para que rote desde la parte superior */
+    transform: translateX(-50%) rotate(0deg); /* Añadido translateX */
+}
+
+.option-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 50% 50% 0; /* Forma de quesito */
+    transform-origin: 0% 0%; /* Rota desde la esquina superior izquierda */
+    transform: rotate(-90deg) skewY(calc(90deg - (360deg / (options.length * 2)))); /* Ajuste para el ángulo */
+    padding: 10px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #f00;
+}
+
+button {
+    position: relative;
+    top: 320px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.result {
+    text-align: center;
+    margin-top: 20px;
+}

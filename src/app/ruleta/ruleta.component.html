@@ -1,0 +1,16 @@
+<div class="ruleta-container">
+  <app-go-back-button></app-go-back-button>
+  <div class="ruleta" [style.transform]="'rotate(' + rotation + 'deg)'">
+    <div *ngFor="let option of options; let i = index" class="option" [style.transform]="'rotate(' + (i * (360 / options.length)) + 'deg)'">
+      <div class="option-inner" [style.background-color]="'hsl(' + (i * (360 / options.length)) + ', 100%, 50%)'">
+        {{ option }}
+      </div>
+    </div>
+  </div>
+  <!-- Flecha fija arriba -->
+  <div class="arrow"></div>
+  <button (click)="spinRuleta()">Girar</button>
+  <div class="result" *ngIf="result">
+    <h3>Opción ganadora: {{ result }}</h3>
+  </div>
+</div>

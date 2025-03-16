@@ -1,0 +1,11 @@
+<div class="race-track">
+  <app-go-back-button></app-go-back-button>
+  <div *ngFor="let snail of snails" class="race-lane">
+    <div class="snail" [ngClass]="{ 'winner': snail.position >= 85 }" [style.left.%]="snail.position">
+      {{ snail.name }}
+    </div>
+  </div>
+</div>
+
+<button (click)="startRace()">Start Race</button>
+<button (click)="restartRace()">Restart Race</button>

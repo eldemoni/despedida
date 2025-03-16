@@ -1,0 +1,17 @@
+<div class="buttons">
+  <app-go-back-button></app-go-back-button>
+  <button (click)="reiniciarJuego()">🔄</button>
+</div>
+
+<div class="autobus-container">
+  <div class="cartas-boca-abajo">
+    <div *ngFor="let carta of cartasBocaAbajo; let i = index" class="carta-boca-abajo" (click)="destaparCarta(i)" [ngClass]="{ 'destapada': cartasMostradas.length > i }">
+      <div *ngIf="cartasMostradas.length > i" class="carta-grande" [ngClass]="{ 'roja': esRoja(cartasMostradas[i]) }">
+        <span class="valor">{{ cartasMostradas[i].valor }}</span>
+        <span class="palo">{{ cartasMostradas[i].palo }}</span>
+        <span class="valor-2">{{ cartasMostradas[i].valor }}</span>
+      </div>
+    </div>
+  </div>
+
+</div>

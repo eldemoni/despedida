@@ -1,0 +1,11 @@
+<div class="makelele-container">
+  <app-go-back-button></app-go-back-button>
+  <button (click)="cogerCarta()">Coger Carta</button>
+
+  <div *ngIf="cartaMostrada" class="carta-grande" [ngClass]="{ 'roja': esRoja(cartaMostrada) }">
+    <span class="valor">{{ cartaMostrada.valor }}</span>
+    <span class="palo">{{ cartaMostrada.palo }}</span>
+    <span class="valor-2">{{ cartaMostrada.valor }}</span>
+  </div>
+</div>
+

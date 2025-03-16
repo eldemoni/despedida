@@ -1,0 +1,25 @@
+<div class="container">
+  <app-go-back-button></app-go-back-button>
+  <h2>Adivina quién dijo la frase:</h2>
+  <button (click)="obtenerPregunta()">Coger Carta</button>
+
+  <div class="trivia-card">
+    <p class="frase">{{ preguntaActual?.frase }}</p>
+
+    <div *ngIf="preguntaActual" class="opciones">
+      <button *ngFor="let opcion of trolls"
+              (click)="verificarRespuesta(opcion)"
+              [ngClass]="{
+                'correcto': respuestaCorrecta && jugadorSeleccionado === opcion,
+                'incorrecto': respuestaCorrecta === false && jugadorSeleccionado === opcion
+              }">
+        {{ opcion }}
+      </button>
+    </div>
+
+    <div *ngIf="respuestaCorrecta !== null" class="resultado">
+      <p *ngIf="respuestaCorrecta" class="correcto">¡Correcto! La frase fue dicha por {{ preguntaActual.persona }}.</p>
+      <p *ngIf="!respuestaCorrecta" class="incorrecto">Incorrecto. La frase fue dicha por {{ preguntaActual.persona }}.</p>
+    </div>
+  </div>
+</div>

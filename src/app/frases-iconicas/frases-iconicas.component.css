@@ -1,0 +1,82 @@
+.container {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.trivia-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #555;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: 'Arial', sans-serif;
+}
+
+.frase {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #ffd700;
+}
+
+.opciones {
+  margin-top: 20px;
+}
+
+.opciones button {
+  padding: 12px 25px;
+  margin: 5px;
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.opciones button:hover {
+  background-color: #2196F3;
+  transform: translateY(-2px);
+}
+
+.opciones button.correcto {
+  background-color: #4caf50;
+}
+
+.opciones button.incorrecto {
+  background-color: #f44336;
+}
+
+.resultado {
+  margin-top: 20px;
+}
+
+.correcto {
+  color: #4caf50;
+  font-size: 18px;
+}
+
+.incorrecto {
+  color: #f44336;
+  font-size: 18px;
+}
+
+button {
+  margin-top: 30px;
+  background-color: #2196F3;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #1976D2;
+  transform: translateY(-2px);
+}

@@ -1,0 +1,73 @@
+.container {
+  text-align: center;
+  margin: 20px;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.quest-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #555;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.quest-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #ffd700; /* Oro para el título */
+}
+
+.quest-card p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.quest-card strong {
+  color: #87ceeb; /* Azul claro para la dificultad */
+}
+
+button {
+  padding: 12px 25px;
+  margin: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+button:disabled {
+  background-color: #777;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result span {
+  margin: 0 10px;
+}
+
+.success {
+  color: #4caf50;
+}
+
+.failure {
+  color: #f44336;
+}

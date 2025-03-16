@@ -1,0 +1,72 @@
+.buttons {
+  text-align: center;
+  display: flex; /* Añadido para centrar verticalmente */
+  flex-direction: row; /* Añadido para centrar verticalmente */
+  align-items: center; /* Añadido para centrar horizontalmente */
+  justify-content: space-between; /* Añadido para centrar verticalmente */
+}
+
+.autobus-container {
+  text-align: center;
+  display: flex; /* Añadido para centrar verticalmente */
+  flex-direction: column; /* Añadido para centrar verticalmente */
+  align-items: center; /* Añadido para centrar horizontalmente */
+  justify-content: center; /* Añadido para centrar verticalmente */
+}
+
+.cartas-boca-abajo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.carta-boca-abajo {
+  width: 80px;
+  height: 110px;
+  background-color: #ccc;
+  border: 1px solid #333;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.carta-boca-abajo.destapada {
+  background-color: transparent;
+  border: none;
+}
+
+.carta-grande {
+  width: 80px;
+  height: 110px;
+  background-color: antiquewhite;
+  border: 2px solid #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 24px;
+  text-align: center;
+}
+
+.valor {
+  align-self: flex-start;
+  margin-left: 2px;
+  font-size: 24px;
+}
+
+.palo {
+  align-self: center;
+  font-size: 30px;
+}
+
+.valor-2 {
+  align-self: flex-end;
+  margin-right: 2px;
+  font-size: 24px;
+}
+
+.roja {
+  color: red;
+}

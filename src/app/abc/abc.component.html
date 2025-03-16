@@ -1,0 +1,16 @@
+<div class="alphabet-container">
+  <app-go-back-button></app-go-back-button>
+  <div class="alphabet">
+    <div class="letter" *ngFor="let letter of alphabet; let i = index" (click)="openDialog(i)">
+      {{ letter.char }}
+    </div>
+  </div>
+</div>
+
+<!-- Dialogo Modal -->
+<div class="modal" *ngIf="isDialogOpen">
+  <div class="modal-content">
+    <h3>{{ currentQuestion }}</h3>
+    <button (click)="closeDialog()">Cerrar</button>
+  </div>
+</div>

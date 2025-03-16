@@ -1,0 +1,60 @@
+/* Estilos generales */
+.body {
+  font-family: Arial, sans-serif;  /* Fuente general */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;  /* Ocupa toda la altura de la pantalla */
+}
+
+/* Estilo para el título */
+h1 {
+  color: white;  /* Color oscuro para el texto */
+  font-size: 24px;
+  margin-bottom: 20px;  /* Espaciado debajo del título */
+}
+
+/* Estilos del menú */
+nav {
+  padding: 15px;
+  border-radius: 8px;
+  width: 90%;  /* Ancho del menú */
+  max-width: 400px;  /* Limita el ancho máximo */
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;  /* Disposición vertical */
+  align-items: center;  /* Centrado de los botones */
+}
+
+nav ul li {
+  margin: 10px 0;  /* Espaciado entre los botones */
+}
+
+/* Estilos de los enlaces (botones) */
+nav ul li a {
+  display: block;  /* Los botones ahora son bloques para ocupar todo el ancho */
+  color: #ecf0f1;  /* Texto blanco */
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 0;  /* Padding superior e inferior */
+  background-color: #2583c2;  /* Fondo azul */
+  border-radius: 5px;  /* Bordes redondeados */
+  transition: background-color 0.3s ease, transform 0.2s ease;  /* Transiciones suaves */
+  width: 200px;
+  text-align: center;  /* Centrar el texto */
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+nav ul li a:hover {
+  background-color: #2980b9;  /* Fondo azul más oscuro */
+  transform: scale(1.05);  /* Efecto de aumento */
+}
